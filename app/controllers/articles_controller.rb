@@ -19,6 +19,10 @@ before_action :move_to_index, except: [:index, :show]
   def new
   end
 
+  def search
+    @articles = Article.where('title LIKE(?)', "%#{params[:keyword]}%").limit(20)
+  end
+
   def create
     @article = Article.create(article_params)
     if @article.save
