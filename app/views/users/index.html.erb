@@ -1,0 +1,21 @@
+<div class="wrapper-mypage">
+  <div class="wrapper-mypage__contain">
+    <div class="top">
+      <img src ="https://cdn.pixabay.com/photo/2018/04/04/14/34/design-3289964_1280.png">
+      <h3>
+      <%= @user.nickname %>
+      </h3>
+    </div>
+    <div class="bottom">
+      <ul>
+        <%- @articles.each do |article| %>
+          <li>
+            <%= link_to article.title, article_path(article.id) %>
+            <%= link_to '削除', "/articles/#{article.id}", method: :delete, class: "right delete" %>
+            <%= link_to '編集', "/articles/#{article.id}/edit", method: :get,  class: "right edit" %>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</div>

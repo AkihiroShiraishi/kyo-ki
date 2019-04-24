@@ -1,0 +1,50 @@
+<div class="wrapper-show">
+  <div class="wrapper-show__article">
+    <div class="title">
+      <%= @article.title %>
+    </div>
+    <div class="text">
+      <%= @article.text %>
+    </div>
+  </div>
+  <div class="wrapper-show__comment">
+    <h3>Comment</h3>
+    <div class="wrapper-show__comment__submit">
+      <% if current_user %>
+        <%= form_tag("/articles/#{@article.id}/comments", method: :post) do %>
+          <p>恐怖度指数</p>
+          <select name="rate">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+          <textarea  placeholder="コメントを入力" name="text"></textarea>
+          <input type="submit" value = "SENT">
+        <% end %>
+      <% end %>
+    </div>
+    <div class="wrapper-show__comment__index">
+      <p>コメント一覧</p>
+      <% if @comments %>
+        <% @comments.each do |comment| %>
+          <p>
+            <strong><a><%= comment.user.nickname %></a></strong>
+            <% num = 0 %>
+            <% while comment.rate > num do %>
+            <a class="fa fa-ghost"></a>
+            <% num += 1 %>
+            <% end %>
+            <a class="text">
+            <br>
+            <%= comment.text %>
+            </a>
+          </p>
+          <% end %>
+          <% end %>
+    </div>
+  </div>
+</div>
+
+

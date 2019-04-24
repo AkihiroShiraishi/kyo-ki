@@ -1,0 +1,38 @@
+.wrapper-newarticle{
+  background-color:#a9a9a9;
+  width:100%;
+  height: 100%;
+  padding:160px 0;
+  &__contain{
+    background-color: white;
+    width:800px;
+    height: 400px;
+    margin:0 auto;
+    padding:50px;
+    form{
+      #title{
+        width:100%;
+        height: 50px;
+         border:2px solid black;
+         border-bottom:1px dashed black;
+         padding:0;
+      }
+      #text{
+        width:100%;
+        height: 300px;
+         border:2px solid black;
+         border-top:1px dashed black;
+         padding:0;
+      }
+      #submit{
+        -webkit-appearance: none;
+        margin:10px 0 0 0;
+        width:100%;
+        height: 60px;
+        background-color: black;
+        color:white;
+        font-size:30px;
+      }
+    }
+  }
+}

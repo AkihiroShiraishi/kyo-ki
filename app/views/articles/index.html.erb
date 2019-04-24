@@ -1,0 +1,75 @@
+
+<div class="wrapper-main">
+  <div class="wrapper-top">
+    <img src="https://cdn.pixabay.com/photo/2014/08/11/11/50/full-moon-415501_1280.jpg">
+  </div>
+  <div class="wrapper-article">
+    <h3>新着記事</h3>
+    <div class="wrapper-article__list">
+      <ul>
+        <%- @articles.each do |article| %>
+          <li>
+            <%= link_to article.title, article_path(article.id) %>
+            <% num = article.comments.average(:rate).to_i %>
+            <% num.times do %>
+            <i class="fa fa-ghost"></i>
+            <% num -= 1 %>
+            <% end %>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+    <div class="wrapper-article__side">
+      <h4>恐怖ランキング</h4>
+      <nav>
+        <ul>
+          <li>
+            <p class="num">1</p>
+            <p class="title">井戸</p>
+          </li>
+          <li>
+            <p class="num">2</p>
+            <p class="title">廃墟</p>
+          </li>
+          <li>
+            <p class="num">3</p>
+            <p class="title">仄暗い水の底から</p>
+          </li>
+          <li>
+            <p class="num">4</p>
+            <p class="title">夜の帰り道</p>
+          </li>
+          <li>
+            <p class="num">5</p>
+            <p class="title">ミラーハウス</p>
+          </li>
+          <li>
+            <p class="num">6</p>
+            <p class="title">赤い目</p>
+          </li>
+          <li>
+            <p class="num">7</p>
+            <p class="title">長い髪の女</p>
+          </li>
+          <li>
+            <p class="num">8</p>
+            <p class="title">命日</p>
+          </li>
+          <li>
+            <p class="num">9</p>
+            <p class="title">堕天</p>
+          </li>
+          <li>
+            <p class="num">10</p>
+            <p class="title">エクソシスト</p>
+          </li>
+
+        </ul>
+      </nav>
+    </div>
+    <div class="clearfix">
+
+    </div>
+     <%= paginate(@articles) %>
+  </div>
+</div>

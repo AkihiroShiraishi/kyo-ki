@@ -1,0 +1,12 @@
+<div class="wrapper-newarticle">
+  <div class="wrapper-newarticle__contain">
+    <%= form_tag("/articles/#{@article.id}", method: :patch) do %>
+      <input type ="text" id="title" name="title"  value="<%= @article.title %>">
+
+      <textarea type="text" id="text" name="text">
+      <%= @article.text %>
+      </textarea>
+      <input type="submit" value="変更する" id = "submit">
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+<div class="wrapper-newarticle">
+  <div class="wrapper-newarticle__contain">
+    <%= form_tag('/articles', method: :post) do  %>
+      <input type ="text" id="title" name="title">
+      <textarea type="text" id="text" name="text"></textarea>
+      <input type="submit" value="投稿する" id = "submit">
+    <% end %>
+  </div>
+</div>
