@@ -4,6 +4,8 @@ before_action :move_to_index, except: [:index, :show]
 
   def index
     @articles = Article.order("created_at DESC").page(params[:page]).per(20)
+    article_ids = Comment.group(:article_id).order('average_rate DESC').limit(10).average(:rate).keys
+    @ranking = article_ids.map{ |id| Article.find(id)}
   end
   def show
     @article = Article.find(params[:id])

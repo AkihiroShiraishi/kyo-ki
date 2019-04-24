@@ -18531,3 +18531,2436 @@ Processing by ArticlesController#index as HTML
 Completed 200 OK in 59ms (Views: 50.7ms | ActiveRecord: 5.2ms)
 
 
+Started GET "/" for ::1 at 2019-04-24 12:38:42 +0900
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/shiraishiakihiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (1.0ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` ORDER BY created_at DESC LIMIT 20 OFFSET 0[0m
+  ↳ app/views/articles/index.html.erb:10
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 46[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 45[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 44[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 43[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 42[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 41[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 40[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 39[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 38[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 37[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 36[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 35[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 34[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 33[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 32[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 31[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 30[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 29[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 28[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 27[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `articles`[0m
+  ↳ app/views/articles/index.html.erb:73
+  Rendered articles/index.html.erb within layouts/application (69.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/layouts/application.html.erb:20
+Completed 200 OK in 449ms (Views: 409.3ms | ActiveRecord: 16.1ms)
+
+
+Started GET "/" for ::1 at 2019-04-24 12:41:21 +0900
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` ORDER BY created_at DESC LIMIT 20 OFFSET 0[0m
+  ↳ app/views/articles/index.html.erb:10
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 46[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 45[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 44[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 43[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 42[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 41[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 40[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 39[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 38[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 37[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 36[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 35[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 34[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 33[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 32[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 31[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 30[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 29[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 28[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 27[0m
+  ↳ app/views/articles/index.html.erb:13
+  Rendered articles/index.html.erb within layouts/application (44.5ms)
+Completed 500 Internal Server Error in 66ms (ActiveRecord: 10.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    23:       <h4>恐怖ランキング</h4>
+    24:       <nav>
+    25:         <ul>
+    26:           <% @ranking.each do |artilce| %>
+    27:           <li>
+    28:             <p class="num">1</p>
+    29:             <p class="title">
+  
+app/views/articles/index.html.erb:26:in `_app_views_articles_index_html_erb__2132106678584935966_70277880686520'
+Started GET "/" for ::1 at 2019-04-24 12:41:57 +0900
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` ORDER BY created_at DESC LIMIT 20 OFFSET 0[0m
+  ↳ app/views/articles/index.html.erb:10
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 46[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 45[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 44[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 43[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 42[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 41[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 40[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 39[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 38[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 37[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 36[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 35[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 34[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 33[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 32[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 31[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 30[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 29[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 28[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 27[0m
+  ↳ app/views/articles/index.html.erb:13
+  Rendered articles/index.html.erb within layouts/application (20.8ms)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 4.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    23:       <h4>恐怖ランキング</h4>
+    24:       <nav>
+    25:         <ul>
+    26:           <% @ranking.each do |artilce| %>
+    27:           <li>
+    28:             <p class="num">1</p>
+    29:             <p class="title">
+  
+app/views/articles/index.html.erb:26:in `_app_views_articles_index_html_erb__2132106678584935966_70277865129420'
+Started GET "/" for ::1 at 2019-04-24 12:42:24 +0900
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` ORDER BY created_at DESC LIMIT 20 OFFSET 0[0m
+  ↳ app/views/articles/index.html.erb:10
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 46[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 45[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 44[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 43[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 42[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 41[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 40[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 39[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 38[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 37[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 36[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 35[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 34[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 33[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 32[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 31[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 30[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 29[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 28[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 27[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` LIMIT 10[0m
+  ↳ app/views/articles/index.html.erb:26
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `articles`[0m
+  ↳ app/views/articles/index.html.erb:40
+  Rendered articles/index.html.erb within layouts/application (36.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/layouts/application.html.erb:20
+Completed 200 OK in 70ms (Views: 55.4ms | ActiveRecord: 9.6ms)
+
+
+Started GET "/?page=2" for ::1 at 2019-04-24 12:42:31 +0900
+Processing by ArticlesController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` ORDER BY created_at DESC LIMIT 20 OFFSET 20[0m
+  ↳ app/views/articles/index.html.erb:10
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 26[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 25[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 24[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` LIMIT 10[0m
+  ↳ app/views/articles/index.html.erb:26
+  Rendered articles/index.html.erb within layouts/application (18.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/layouts/application.html.erb:20
+Completed 200 OK in 45ms (Views: 40.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for ::1 at 2019-04-24 12:42:33 +0900
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` ORDER BY created_at DESC LIMIT 20 OFFSET 0[0m
+  ↳ app/views/articles/index.html.erb:10
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 46[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 45[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 44[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 43[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 42[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 41[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 40[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 39[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 38[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 37[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 36[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 35[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 34[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 33[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 32[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 31[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 30[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 29[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 28[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 27[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` LIMIT 10[0m
+  ↳ app/views/articles/index.html.erb:26
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `articles`[0m
+  ↳ app/views/articles/index.html.erb:40
+  Rendered articles/index.html.erb within layouts/application (31.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/layouts/application.html.erb:20
+Completed 200 OK in 60ms (Views: 51.6ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/" for ::1 at 2019-04-24 12:43:26 +0900
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` ORDER BY created_at DESC LIMIT 20 OFFSET 0[0m
+  ↳ app/views/articles/index.html.erb:10
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 46[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 45[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 44[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 43[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 42[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 41[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 40[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 39[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 38[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 37[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 36[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 35[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 34[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 33[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 32[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 31[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 30[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 29[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 28[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 27[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` LIMIT 10[0m
+  ↳ app/views/articles/index.html.erb:27
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `articles`[0m
+  ↳ app/views/articles/index.html.erb:42
+  Rendered articles/index.html.erb within layouts/application (31.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/layouts/application.html.erb:20
+Completed 200 OK in 57ms (Views: 49.0ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/" for ::1 at 2019-04-24 12:45:14 +0900
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` ORDER BY created_at DESC LIMIT 20 OFFSET 0[0m
+  ↳ app/views/articles/index.html.erb:10
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 46[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 45[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 44[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 43[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 42[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 41[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 40[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 39[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 38[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 37[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 36[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 35[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 34[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 33[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 32[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 31[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 30[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 29[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 28[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 27[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` LIMIT 10[0m
+  ↳ app/views/articles/index.html.erb:27
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `articles`[0m
+  ↳ app/views/articles/index.html.erb:42
+  Rendered articles/index.html.erb within layouts/application (31.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/layouts/application.html.erb:20
+Completed 200 OK in 58ms (Views: 50.3ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/" for ::1 at 2019-04-24 12:45:15 +0900
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` ORDER BY created_at DESC LIMIT 20 OFFSET 0[0m
+  ↳ app/views/articles/index.html.erb:10
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 46[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 45[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 44[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 43[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 42[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 41[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 40[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 39[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 38[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 37[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 36[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 35[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 34[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 33[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 32[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 31[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 30[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 29[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 28[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 27[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` ORDER BY rate DESC LIMIT 10[0m
+  ↳ app/views/articles/index.html.erb:27
+  Rendered articles/index.html.erb within layouts/application (30.8ms)
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 8.2ms)
+
+
+  
+ActionView::Template::Error (Mysql2::Error: Unknown column 'rate' in 'order clause': SELECT  `articles`.* FROM `articles` ORDER BY rate DESC LIMIT 10):
+    24:       <nav>
+    25:         <ul>
+    26:           <% num = 1 %>
+    27:           <% @ranking.each do |article| %>
+    28:           <li>
+    29:             <p class="num"><%= num %></p>
+    30:             <p class="title">
+  
+app/views/articles/index.html.erb:27:in `_app_views_articles_index_html_erb__2132106678584935966_70277958144580'
+Started GET "/" for ::1 at 2019-04-24 12:45:44 +0900
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` ORDER BY created_at DESC LIMIT 20 OFFSET 0[0m
+  ↳ app/views/articles/index.html.erb:10
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 46[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 45[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 44[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 43[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 42[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 41[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 40[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 39[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 38[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 37[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 36[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 35[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 34[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 33[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 32[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 31[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 30[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 29[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 28[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 27[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[36mArticle Load (0.8ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` ORDER BY rate DESC LIMIT 10[0m
+  ↳ app/views/articles/index.html.erb:27
+  Rendered articles/index.html.erb within layouts/application (24.0ms)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 5.3ms)
+
+
+  
+ActionView::Template::Error (Mysql2::Error: Unknown column 'rate' in 'order clause': SELECT  `articles`.* FROM `articles` ORDER BY rate DESC LIMIT 10):
+    24:       <nav>
+    25:         <ul>
+    26:           <% num = 1 %>
+    27:           <% @ranking.each do |article| %>
+    28:           <li>
+    29:             <p class="num"><%= num %></p>
+    30:             <p class="title">
+  
+app/views/articles/index.html.erb:27:in `_app_views_articles_index_html_erb__2132106678584935966_70277865440640'
+Started GET "/" for ::1 at 2019-04-24 12:46:17 +0900
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` ORDER BY created_at DESC LIMIT 20 OFFSET 0[0m
+  ↳ app/views/articles/index.html.erb:10
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 46[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 45[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 44[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 43[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 42[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 41[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 40[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 39[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 38[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 37[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 36[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 35[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 34[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 33[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 32[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 31[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 30[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 29[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 28[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 27[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY rate DESC[0m
+  ↳ app/views/articles/index.html.erb:27
+  Rendered articles/index.html.erb within layouts/application (28.9ms)
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 8.2ms)
+
+
+  
+ActionView::Template::Error (Mysql2::Error: Unknown column 'rate' in 'order clause': SELECT `articles`.* FROM `articles` ORDER BY rate DESC):
+    24:       <nav>
+    25:         <ul>
+    26:           <% num = 1 %>
+    27:           <% @ranking.each do |article| %>
+    28:           <li>
+    29:             <p class="num"><%= num %></p>
+    30:             <p class="title">
+  
+app/views/articles/index.html.erb:27:in `_app_views_articles_index_html_erb__2132106678584935966_70277865345060'
+Started GET "/" for ::1 at 2019-04-24 12:46:19 +0900
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` ORDER BY created_at DESC LIMIT 20 OFFSET 0[0m
+  ↳ app/views/articles/index.html.erb:10
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 46[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 45[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 44[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 43[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 42[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 41[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 40[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 39[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 38[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 37[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 36[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 35[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 34[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 33[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 32[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 31[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 30[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 29[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 28[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 27[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY rate DESC[0m
+  ↳ app/views/articles/index.html.erb:27
+  Rendered articles/index.html.erb within layouts/application (31.7ms)
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 8.3ms)
+
+
+  
+ActionView::Template::Error (Mysql2::Error: Unknown column 'rate' in 'order clause': SELECT `articles`.* FROM `articles` ORDER BY rate DESC):
+    24:       <nav>
+    25:         <ul>
+    26:           <% num = 1 %>
+    27:           <% @ranking.each do |article| %>
+    28:           <li>
+    29:             <p class="num"><%= num %></p>
+    30:             <p class="title">
+  
+app/views/articles/index.html.erb:27:in `_app_views_articles_index_html_erb__2132106678584935966_70277973542020'
+Started GET "/" for ::1 at 2019-04-24 12:47:06 +0900
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` ORDER BY created_at DESC LIMIT 20 OFFSET 0[0m
+  ↳ app/views/articles/index.html.erb:10
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 46[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 45[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 44[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 43[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 42[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 41[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 40[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 39[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 38[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 37[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 36[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 35[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 34[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 33[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 32[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 31[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 30[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 29[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 28[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 27[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY rate DESC[0m
+  ↳ app/views/articles/index.html.erb:27
+  Rendered articles/index.html.erb within layouts/application (20.5ms)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 4.8ms)
+
+
+  
+ActionView::Template::Error (Mysql2::Error: Unknown column 'rate' in 'order clause': SELECT `articles`.* FROM `articles` ORDER BY rate DESC):
+    24:       <nav>
+    25:         <ul>
+    26:           <% num = 1 %>
+    27:           <%- @ranking.each do |article| %>
+    28:           <li>
+    29:             <p class="num"><%= num %></p>
+    30:             <p class="title">
+  
+app/views/articles/index.html.erb:27:in `_app_views_articles_index_html_erb__2132106678584935966_70277972090440'
+Started GET "/" for ::1 at 2019-04-24 12:48:43 +0900
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` ORDER BY created_at DESC LIMIT 20 OFFSET 0[0m
+  ↳ app/views/articles/index.html.erb:10
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 46[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 45[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 44[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 43[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 42[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 41[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 40[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 39[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 38[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 37[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 36[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 35[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 34[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 33[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 32[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 31[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 30[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 29[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 28[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 27[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY rate DESC[0m
+  ↳ app/views/articles/index.html.erb:27
+  Rendered articles/index.html.erb within layouts/application (19.8ms)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 4.7ms)
+
+
+  
+ActionView::Template::Error (Mysql2::Error: Unknown column 'rate' in 'order clause': SELECT `articles`.* FROM `articles` ORDER BY rate DESC):
+    24:       <nav>
+    25:         <ul>
+    26:           <% num = 1 %>
+    27:           <% @ranking.each do |article| %>
+    28:           <li>
+    29:             <p class="num"><%= num %></p>
+    30:             <p class="title">
+  
+app/views/articles/index.html.erb:27:in `_app_views_articles_index_html_erb__2132106678584935966_70277980478780'
+Started GET "/" for ::1 at 2019-04-24 12:51:45 +0900
+Processing by ArticlesController#index as HTML
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): " article.comments.average(:rate).to_i DESC". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from index at /Users/shiraishiakihiro/projects/kyo-ki/kyo-ki/app/controllers/articles_controller.rb:7)
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` ORDER BY created_at DESC LIMIT 20 OFFSET 0[0m
+  ↳ app/views/articles/index.html.erb:10
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 46[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 45[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 44[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 43[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 42[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 41[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 40[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 39[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 38[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 37[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 36[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 35[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 34[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 33[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 32[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 31[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 30[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 29[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 28[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 27[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY  article.comments.average(:rate).to_i DESC[0m
+  ↳ app/views/articles/index.html.erb:27
+  Rendered articles/index.html.erb within layouts/application (33.4ms)
+Completed 500 Internal Server Error in 47ms (ActiveRecord: 7.9ms)
+
+
+  
+ActionView::Template::Error (Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(:rate).to_i DESC' at line 1: SELECT `articles`.* FROM `articles` ORDER BY  article.comments.average(:rate).to_i DESC):
+    24:       <nav>
+    25:         <ul>
+    26:           <% num = 1 %>
+    27:           <% @ranking.each do |article| %>
+    28:           <li>
+    29:             <p class="num"><%= num %></p>
+    30:             <p class="title">
+  
+app/views/articles/index.html.erb:27:in `_app_views_articles_index_html_erb__2132106678584935966_70277920339340'
+Started GET "/" for ::1 at 2019-04-24 12:52:25 +0900
+Processing by ArticlesController#index as HTML
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): " @rate DESC". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from index at /Users/shiraishiakihiro/projects/kyo-ki/kyo-ki/app/controllers/articles_controller.rb:7)
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` ORDER BY created_at DESC LIMIT 20 OFFSET 0[0m
+  ↳ app/views/articles/index.html.erb:10
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 46[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 45[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 44[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 43[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 42[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 41[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 40[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 39[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 38[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 37[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 36[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 35[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 34[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 33[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 32[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 31[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 30[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 29[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 28[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 27[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[36mArticle Load (1.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY  @rate DESC[0m
+  ↳ app/views/articles/index.html.erb:27
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `articles`[0m
+  ↳ app/views/articles/index.html.erb:42
+  Rendered articles/index.html.erb within layouts/application (39.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/layouts/application.html.erb:20
+Completed 200 OK in 78ms (Views: 62.3ms | ActiveRecord: 10.2ms)
+
+
+Started GET "/" for ::1 at 2019-04-24 12:55:33 +0900
+Processing by ArticlesController#index as HTML
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "  DESC". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from index at /Users/shiraishiakihiro/projects/kyo-ki/kyo-ki/app/controllers/articles_controller.rb:7)
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.8ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` ORDER BY created_at DESC LIMIT 20 OFFSET 0[0m
+  ↳ app/views/articles/index.html.erb:10
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 46[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 45[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 44[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 43[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 42[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 41[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 40[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 39[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 38[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 37[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 36[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 35[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 34[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 33[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 32[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 31[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 30[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 29[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 28[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 27[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY   DESC[0m
+  ↳ app/views/articles/index.html.erb:27
+  Rendered articles/index.html.erb within layouts/application (28.4ms)
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 8.2ms)
+
+
+  
+ActionView::Template::Error (Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC' at line 1: SELECT `articles`.* FROM `articles` ORDER BY   DESC):
+    24:       <nav>
+    25:         <ul>
+    26:           <% num = 1 %>
+    27:           <% @ranking.each do |article| %>
+    28:           <li>
+    29:             <p class="num"><%= num %></p>
+    30:             <p class="title">
+  
+app/views/articles/index.html.erb:27:in `_app_views_articles_index_html_erb__2132106678584935966_70277983929940'
+Started GET "/" for ::1 at 2019-04-24 12:55:36 +0900
+Processing by ArticlesController#index as HTML
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "  DESC". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from index at /Users/shiraishiakihiro/projects/kyo-ki/kyo-ki/app/controllers/articles_controller.rb:7)
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` ORDER BY created_at DESC LIMIT 20 OFFSET 0[0m
+  ↳ app/views/articles/index.html.erb:10
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 46[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 45[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 44[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 43[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 42[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 41[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 40[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 39[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 38[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 37[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 36[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 35[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 34[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 33[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 32[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 31[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 30[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 29[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 28[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 27[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY   DESC[0m
+  ↳ app/views/articles/index.html.erb:27
+  Rendered articles/index.html.erb within layouts/application (30.9ms)
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 8.7ms)
+
+
+  
+ActionView::Template::Error (Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC' at line 1: SELECT `articles`.* FROM `articles` ORDER BY   DESC):
+    24:       <nav>
+    25:         <ul>
+    26:           <% num = 1 %>
+    27:           <% @ranking.each do |article| %>
+    28:           <li>
+    29:             <p class="num"><%= num %></p>
+    30:             <p class="title">
+  
+app/views/articles/index.html.erb:27:in `_app_views_articles_index_html_erb__2132106678584935966_70277919252680'
+Started GET "/" for ::1 at 2019-04-24 12:55:52 +0900
+Processing by ArticlesController#index as HTML
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "  DESC". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from index at /Users/shiraishiakihiro/projects/kyo-ki/kyo-ki/app/controllers/articles_controller.rb:7)
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` ORDER BY created_at DESC LIMIT 20 OFFSET 0[0m
+  ↳ app/views/articles/index.html.erb:10
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 46[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 45[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 44[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 43[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 42[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 41[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 40[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 39[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 38[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 37[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 36[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 35[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 34[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 33[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 32[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 31[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 30[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 29[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 28[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 27[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY   DESC[0m
+  ↳ app/views/articles/index.html.erb:27
+  Rendered articles/index.html.erb within layouts/application (20.5ms)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 4.9ms)
+
+
+  
+ActionView::Template::Error (Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC' at line 1: SELECT `articles`.* FROM `articles` ORDER BY   DESC):
+    24:       <nav>
+    25:         <ul>
+    26:           <% num = 1 %>
+    27:           <% @ranking.each do |article| %>
+    28:           <li>
+    29:             <p class="num"><%= num %></p>
+    30:             <p class="title">
+  
+app/views/articles/index.html.erb:27:in `_app_views_articles_index_html_erb__2132106678584935966_70277864198600'
+Started GET "/" for ::1 at 2019-04-24 12:55:54 +0900
+Processing by ArticlesController#index as HTML
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): " created_at DESC". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from index at /Users/shiraishiakihiro/projects/kyo-ki/kyo-ki/app/controllers/articles_controller.rb:7)
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.8ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` ORDER BY created_at DESC LIMIT 20 OFFSET 0[0m
+  ↳ app/views/articles/index.html.erb:10
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 46[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 45[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 44[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 43[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 42[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 41[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 40[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 39[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 38[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 37[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 36[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 35[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 34[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 33[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 32[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 31[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 30[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 29[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 28[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 27[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY  created_at DESC[0m
+  ↳ app/views/articles/index.html.erb:27
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `articles`[0m
+  ↳ app/views/articles/index.html.erb:42
+  Rendered articles/index.html.erb within layouts/application (39.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/layouts/application.html.erb:20
+Completed 200 OK in 75ms (Views: 59.1ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/articles/39" for ::1 at 2019-04-24 12:56:11 +0900
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"39"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 39 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:10
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/articles/show.html.erb:13
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT `comments`.* FROM `comments` WHERE `comments`.`article_id` = 39[0m
+  ↳ app/views/articles/show.html.erb:31
+  Rendered articles/show.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 37ms (Views: 32.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users.3" for ::1 at 2019-04-24 12:56:15 +0900
+Processing by UsersController#index as 
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:4
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` WHERE `articles`.`user_id` = 3[0m
+  ↳ app/views/users/index.html.erb:11
+  Rendered users/index.html.erb within layouts/application (1.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/layouts/application.html.erb:20
+Completed 200 OK in 65ms (Views: 40.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2019-04-24 12:56:16 +0900
+Processing by ArticlesController#index as HTML
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): " created_at DESC". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from index at /Users/shiraishiakihiro/projects/kyo-ki/kyo-ki/app/controllers/articles_controller.rb:7)
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` ORDER BY created_at DESC LIMIT 20 OFFSET 0[0m
+  ↳ app/views/articles/index.html.erb:10
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 46[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 45[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 44[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 43[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 42[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 41[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 40[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 39[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 38[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 37[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 36[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 35[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 34[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 33[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 32[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 31[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 30[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 29[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 28[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 27[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` ORDER BY  created_at DESC[0m
+  ↳ app/views/articles/index.html.erb:27
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `articles`[0m
+  ↳ app/views/articles/index.html.erb:42
+  Rendered articles/index.html.erb within layouts/application (33.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/layouts/application.html.erb:20
+Completed 200 OK in 63ms (Views: 54.0ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/" for ::1 at 2019-04-24 12:57:57 +0900
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `comments' for nil:NilClass):
+  
+app/controllers/articles_controller.rb:7:in `index'
+Started GET "/" for ::1 at 2019-04-24 12:58:03 +0900
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` ORDER BY created_at DESC LIMIT 11 OFFSET 0[0m
+  ↳ /Users/shiraishiakihiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+  [1m[36mCACHE Article Load (0.0ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` ORDER BY created_at DESC LIMIT 11 OFFSET 0[0m
+  ↳ /Users/shiraishiakihiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+NoMethodError (undefined method `comments' for #<Article::ActiveRecord_Relation:0x007fd5ae221510>):
+  
+app/controllers/articles_controller.rb:7:in `index'
+Started GET "/" for ::1 at 2019-04-24 12:58:51 +0900
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` ORDER BY created_at DESC LIMIT 20 OFFSET 0[0m
+  ↳ app/views/articles/index.html.erb:10
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 46[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 45[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 44[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 43[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 42[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 41[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 40[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 39[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 38[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 37[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 36[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 35[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 34[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 33[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 32[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 31[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 30[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 29[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 28[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 27[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` LIMIT 10[0m
+  ↳ app/views/articles/index.html.erb:27
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `articles`[0m
+  ↳ app/views/articles/index.html.erb:42
+  Rendered articles/index.html.erb within layouts/application (41.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/layouts/application.html.erb:20
+Completed 200 OK in 78ms (Views: 61.4ms | ActiveRecord: 10.5ms)
+
+
+Started GET "/" for ::1 at 2019-04-24 13:07:09 +0900
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/shiraishiakihiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ArticlesController#index as HTML
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT  `comments`.* FROM `comments` GROUP BY `artile_id` ORDER BY average_rate DESC LIMIT 10[0m
+  ↳ app/controllers/articles_controller.rb:8
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 2.0ms)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: Unknown column 'artile_id' in 'group statement': SELECT  `comments`.* FROM `comments` GROUP BY `artile_id` ORDER BY average_rate DESC LIMIT 10):
+  
+app/controllers/articles_controller.rb:8:in `map'
+app/controllers/articles_controller.rb:8:in `index'
+Started GET "/" for ::1 at 2019-04-24 13:07:35 +0900
+Processing by ArticlesController#index as HTML
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT  `comments`.* FROM `comments` GROUP BY `artile_id` ORDER BY average_rate DESC LIMIT 10[0m
+  ↳ app/controllers/articles_controller.rb:8
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.6ms)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: Unknown column 'artile_id' in 'group statement': SELECT  `comments`.* FROM `comments` GROUP BY `artile_id` ORDER BY average_rate DESC LIMIT 10):
+  
+app/controllers/articles_controller.rb:8:in `map'
+app/controllers/articles_controller.rb:8:in `index'
+Started GET "/" for ::1 at 2019-04-24 13:07:44 +0900
+Processing by ArticlesController#index as HTML
+  [1m[36mComment Load (1.5ms)[0m  [1m[34mSELECT  `comments`.* FROM `comments` GROUP BY `artile_id` ORDER BY average_rate DESC LIMIT 10[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mComment Load (1.2ms)[0m  [1m[34mSELECT  `comments`.* FROM `comments` GROUP BY `artile_id` ORDER BY average_rate DESC LIMIT 10[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mComment Load (1.0ms)[0m  [1m[34mSELECT  `comments`.* FROM `comments` GROUP BY `artile_id` ORDER BY average_rate DESC LIMIT 10[0m
+  ↳ app/controllers/articles_controller.rb:9
+Completed 500 Internal Server Error in 46790ms (ActiveRecord: 6.1ms)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: Unknown column 'artile_id' in 'group statement': SELECT  `comments`.* FROM `comments` GROUP BY `artile_id` ORDER BY average_rate DESC LIMIT 10):
+  
+app/controllers/articles_controller.rb:9:in `map'
+app/controllers/articles_controller.rb:9:in `index'
+Started GET "/articles/39" for ::1 at 2019-04-24 13:08:53 +0900
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"39"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 39 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:12
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/articles/show.html.erb:13
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT `comments`.* FROM `comments` WHERE `comments`.`article_id` = 39[0m
+  ↳ app/views/articles/show.html.erb:31
+  Rendered articles/show.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 56ms (Views: 33.7ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/" for ::1 at 2019-04-24 13:08:54 +0900
+Processing by ArticlesController#index as HTML
+  [1m[36mComment Load (0.8ms)[0m  [1m[34mSELECT  `comments`.* FROM `comments` GROUP BY `artile_id` ORDER BY average_rate DESC LIMIT 10[0m
+  ↳ app/controllers/articles_controller.rb:8
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.8ms)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: Unknown column 'artile_id' in 'group statement': SELECT  `comments`.* FROM `comments` GROUP BY `artile_id` ORDER BY average_rate DESC LIMIT 10):
+  
+app/controllers/articles_controller.rb:8:in `map'
+app/controllers/articles_controller.rb:8:in `index'
+Started GET "/" for ::1 at 2019-04-24 13:09:47 +0900
+Processing by ArticlesController#index as HTML
+  [1m[36mComment Load (0.8ms)[0m  [1m[34mSELECT  `comments`.* FROM `comments` GROUP BY `artile_id` ORDER BY average_rate DESC LIMIT 10[0m
+  ↳ app/controllers/articles_controller.rb:8
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.8ms)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: Unknown column 'artile_id' in 'group statement': SELECT  `comments`.* FROM `comments` GROUP BY `artile_id` ORDER BY average_rate DESC LIMIT 10):
+  
+app/controllers/articles_controller.rb:8:in `map'
+app/controllers/articles_controller.rb:8:in `index'
+Started GET "/" for ::1 at 2019-04-24 13:10:21 +0900
+Processing by ArticlesController#index as HTML
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT  `comments`.* FROM `comments` GROUP BY `comments`.`article_id` ORDER BY average_rate DESC LIMIT 10[0m
+  ↳ app/controllers/articles_controller.rb:8
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.9ms)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: Unknown column 'average_rate' in 'order clause': SELECT  `comments`.* FROM `comments` GROUP BY `comments`.`article_id` ORDER BY average_rate DESC LIMIT 10):
+  
+app/controllers/articles_controller.rb:8:in `map'
+app/controllers/articles_controller.rb:8:in `index'
+Started GET "/" for ::1 at 2019-04-24 13:18:44 +0900
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/shiraishiakihiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ArticlesController#index as HTML
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT  AVG(`comments`.`rate`) AS average_rate, `comments`.`article_id` AS comments_article_id FROM `comments` GROUP BY `comments`.`article_id` ORDER BY average_rate DESC LIMIT 10[0m
+  ↳ app/controllers/articles_controller.rb:7
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 41 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 29 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 28 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 42 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 44 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 43 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 38 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 30 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 45 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 35 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` ORDER BY created_at DESC LIMIT 20 OFFSET 0[0m
+  ↳ app/views/articles/index.html.erb:10
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 46[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 45[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 44[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 43[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 42[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 41[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 40[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 39[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 38[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 37[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 36[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 35[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 34[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 33[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 32[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 31[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 30[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 29[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 28[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 27[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `articles`[0m
+  ↳ app/views/articles/index.html.erb:42
+  Rendered articles/index.html.erb within layouts/application (27.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/layouts/application.html.erb:20
+Completed 200 OK in 84ms (Views: 51.4ms | ActiveRecord: 14.6ms)
+
+
+Started GET "/" for ::1 at 2019-04-24 13:20:39 +0900
+Processing by ArticlesController#index as HTML
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT  AVG(`comments`.`rate`) AS average_rate, `comments`.`article_id` AS comments_article_id FROM `comments` GROUP BY `comments`.`article_id` ORDER BY average_rate DESC LIMIT 10[0m
+  ↳ app/controllers/articles_controller.rb:7
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 41 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 29 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 28 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 42 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 44 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 43 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 38 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 30 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 45 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 35 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` ORDER BY created_at DESC LIMIT 20 OFFSET 0[0m
+  ↳ app/views/articles/index.html.erb:10
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 46[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 45[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 44[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 43[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 42[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 41[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 40[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 39[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 38[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 37[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 36[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 35[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 34[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 33[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 32[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 31[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 30[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 29[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 28[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 27[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `articles`[0m
+  ↳ app/views/articles/index.html.erb:42
+  Rendered articles/index.html.erb within layouts/application (29.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/layouts/application.html.erb:20
+Completed 200 OK in 61ms (Views: 46.8ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/articles/41" for ::1 at 2019-04-24 13:20:41 +0900
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"41"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 41 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:11
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/articles/show.html.erb:13
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT `comments`.* FROM `comments` WHERE `comments`.`article_id` = 41[0m
+  ↳ app/views/articles/show.html.erb:31
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2[0m
+  ↳ app/views/articles/show.html.erb:31
+  Rendered articles/show.html.erb within layouts/application (22.6ms)
+Completed 200 OK in 51ms (Views: 46.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2019-04-24 13:20:42 +0900
+Processing by ArticlesController#index as HTML
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT  AVG(`comments`.`rate`) AS average_rate, `comments`.`article_id` AS comments_article_id FROM `comments` GROUP BY `comments`.`article_id` ORDER BY average_rate DESC LIMIT 10[0m
+  ↳ app/controllers/articles_controller.rb:7
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 41 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 29 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 28 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 42 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 44 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 43 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 38 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 30 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 45 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 35 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` ORDER BY created_at DESC LIMIT 20 OFFSET 0[0m
+  ↳ app/views/articles/index.html.erb:10
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 46[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 45[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 44[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 43[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 42[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 41[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 40[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 39[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 38[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 37[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 36[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 35[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 34[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 33[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 32[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 31[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 30[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 29[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 28[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 27[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `articles`[0m
+  ↳ app/views/articles/index.html.erb:42
+  Rendered articles/index.html.erb within layouts/application (31.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/layouts/application.html.erb:20
+Completed 200 OK in 66ms (Views: 48.8ms | ActiveRecord: 8.1ms)
+
+
+Started GET "/" for ::1 at 2019-04-24 13:21:43 +0900
+Processing by ArticlesController#index as HTML
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT  AVG(`comments`.`rate`) AS average_rate, `comments`.`article_id` AS comments_article_id FROM `comments` GROUP BY `comments`.`article_id` ORDER BY average_rate DESC LIMIT 10[0m
+  ↳ app/controllers/articles_controller.rb:7
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 41 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 29 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 28 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 42 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 44 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 43 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 38 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 30 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 45 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 35 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` ORDER BY created_at DESC LIMIT 20 OFFSET 0[0m
+  ↳ app/views/articles/index.html.erb:10
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 46[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 45[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 44[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 43[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 42[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 41[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 40[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 39[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 38[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 37[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 36[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 35[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 34[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 33[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 32[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 31[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 30[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 29[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 28[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 27[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `articles`[0m
+  ↳ app/views/articles/index.html.erb:42
+  Rendered articles/index.html.erb within layouts/application (28.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/layouts/application.html.erb:20
+Completed 200 OK in 280ms (Views: 265.1ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/" for ::1 at 2019-04-24 13:22:13 +0900
+Processing by ArticlesController#index as HTML
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT  AVG(`comments`.`rate`) AS average_rate, `comments`.`article_id` AS comments_article_id FROM `comments` GROUP BY `comments`.`article_id` ORDER BY average_rate DESC LIMIT 10[0m
+  ↳ app/controllers/articles_controller.rb:7
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 41 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 29 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 28 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 42 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 44 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 43 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 38 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 30 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 45 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 35 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` ORDER BY created_at DESC LIMIT 20 OFFSET 0[0m
+  ↳ app/views/articles/index.html.erb:10
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 46[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 45[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 44[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 43[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 42[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 41[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 40[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 39[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 38[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 37[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 36[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 35[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 34[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 33[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 32[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 31[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 30[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 29[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 28[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 27[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `articles`[0m
+  ↳ app/views/articles/index.html.erb:42
+  Rendered articles/index.html.erb within layouts/application (29.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/layouts/application.html.erb:20
+Completed 200 OK in 236ms (Views: 221.5ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/" for ::1 at 2019-04-24 13:22:49 +0900
+Processing by ArticlesController#index as HTML
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT  AVG(`comments`.`rate`) AS average_rate, `comments`.`article_id` AS comments_article_id FROM `comments` GROUP BY `comments`.`article_id` ORDER BY average_rate DESC LIMIT 10[0m
+  ↳ app/controllers/articles_controller.rb:7
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 41 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 29 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 28 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 42 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 44 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 43 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 38 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 30 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 45 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 35 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` ORDER BY created_at DESC LIMIT 20 OFFSET 0[0m
+  ↳ app/views/articles/index.html.erb:10
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 46[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 45[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 44[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 43[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 42[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 41[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 40[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 39[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 38[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 37[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 36[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 35[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 34[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 33[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 32[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 31[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 30[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 29[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 28[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 27[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `articles`[0m
+  ↳ app/views/articles/index.html.erb:42
+  Rendered articles/index.html.erb within layouts/application (31.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/layouts/application.html.erb:20
+Completed 200 OK in 65ms (Views: 50.2ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/" for ::1 at 2019-04-24 13:22:50 +0900
+Processing by ArticlesController#index as HTML
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT  AVG(`comments`.`rate`) AS average_rate, `comments`.`article_id` AS comments_article_id FROM `comments` GROUP BY `comments`.`article_id` ORDER BY average_rate DESC LIMIT 20[0m
+  ↳ app/controllers/articles_controller.rb:7
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 41 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 29 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 28 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 42 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 44 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 43 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 38 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 30 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 45 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 35 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 40 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 32 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` ORDER BY created_at DESC LIMIT 20 OFFSET 0[0m
+  ↳ app/views/articles/index.html.erb:10
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 46[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 45[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 44[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 43[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 42[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 41[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 40[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 39[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 38[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 37[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 36[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 35[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 34[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 33[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 32[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 31[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 30[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 29[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 28[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 27[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `articles`[0m
+  ↳ app/views/articles/index.html.erb:42
+  Rendered articles/index.html.erb within layouts/application (28.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/layouts/application.html.erb:20
+Completed 200 OK in 85ms (Views: 52.2ms | ActiveRecord: 14.8ms)
+
+
+Started GET "/" for ::1 at 2019-04-24 13:23:03 +0900
+Processing by ArticlesController#index as HTML
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT  AVG(`comments`.`rate`) AS average_rate, `comments`.`article_id` AS comments_article_id FROM `comments` GROUP BY `comments`.`article_id` ORDER BY average_rate DESC LIMIT 20[0m
+  ↳ app/controllers/articles_controller.rb:7
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 41 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 29 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 28 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 42 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 44 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 43 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 38 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 30 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 45 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 35 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 40 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 32 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` ORDER BY created_at DESC LIMIT 20 OFFSET 0[0m
+  ↳ app/views/articles/index.html.erb:10
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 46[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 45[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 44[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 43[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 42[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 41[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 40[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 39[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 38[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 37[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 36[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 35[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 34[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 33[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 32[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 31[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 30[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 29[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 28[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 27[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `articles`[0m
+  ↳ app/views/articles/index.html.erb:42
+  Rendered articles/index.html.erb within layouts/application (27.8ms)
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/layouts/application.html.erb:20
+Completed 200 OK in 60ms (Views: 44.6ms | ActiveRecord: 8.3ms)
+
+
+Started GET "/" for ::1 at 2019-04-24 13:23:05 +0900
+Processing by ArticlesController#index as HTML
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT  AVG(`comments`.`rate`) AS average_rate, `comments`.`article_id` AS comments_article_id FROM `comments` GROUP BY `comments`.`article_id` ORDER BY average_rate DESC LIMIT 10[0m
+  ↳ app/controllers/articles_controller.rb:7
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 41 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 29 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 28 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 42 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 44 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 43 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 38 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 30 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 45 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 35 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` ORDER BY created_at DESC LIMIT 20 OFFSET 0[0m
+  ↳ app/views/articles/index.html.erb:10
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 46[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 45[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 44[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 43[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 42[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 41[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 40[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 39[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 38[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 37[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 36[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 35[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 34[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 33[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 32[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 31[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 30[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 29[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 28[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 27[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `articles`[0m
+  ↳ app/views/articles/index.html.erb:42
+  Rendered articles/index.html.erb within layouts/application (28.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/layouts/application.html.erb:20
+Completed 200 OK in 93ms (Views: 51.5ms | ActiveRecord: 12.4ms)
+
+
+Started GET "/" for ::1 at 2019-04-24 13:23:15 +0900
+Processing by ArticlesController#index as HTML
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT  AVG(`comments`.`rate`) AS average_rate, `comments`.`article_id` AS comments_article_id FROM `comments` GROUP BY `comments`.`article_id` ORDER BY average_rate DESC LIMIT 10[0m
+  ↳ app/controllers/articles_controller.rb:7
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 41 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 29 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 28 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 42 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 44 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 43 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 38 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 30 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 45 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 35 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` ORDER BY created_at DESC LIMIT 20 OFFSET 0[0m
+  ↳ app/views/articles/index.html.erb:10
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 46[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 45[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 44[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 43[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 42[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 41[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 40[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 39[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 38[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 37[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 36[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 35[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 34[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 33[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 32[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 31[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 30[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 29[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 28[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 27[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `articles`[0m
+  ↳ app/views/articles/index.html.erb:42
+  Rendered articles/index.html.erb within layouts/application (30.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/layouts/application.html.erb:20
+Completed 200 OK in 63ms (Views: 48.2ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/users.3" for ::1 at 2019-04-24 13:23:16 +0900
+Processing by UsersController#index as 
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:4
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT `articles`.* FROM `articles` WHERE `articles`.`user_id` = 3[0m
+  ↳ app/views/users/index.html.erb:11
+  Rendered users/index.html.erb within layouts/application (1.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/layouts/application.html.erb:20
+Completed 200 OK in 59ms (Views: 37.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2019-04-24 13:23:18 +0900
+Processing by ArticlesController#index as HTML
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT  AVG(`comments`.`rate`) AS average_rate, `comments`.`article_id` AS comments_article_id FROM `comments` GROUP BY `comments`.`article_id` ORDER BY average_rate DESC LIMIT 10[0m
+  ↳ app/controllers/articles_controller.rb:7
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 41 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 29 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 28 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 42 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 44 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 43 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 38 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 30 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 45 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 35 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` ORDER BY created_at DESC LIMIT 20 OFFSET 0[0m
+  ↳ app/views/articles/index.html.erb:10
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 46[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 45[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 44[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 43[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 42[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 41[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 40[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 39[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 38[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 37[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 36[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 35[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 34[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 33[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 32[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 31[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 30[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 29[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 28[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 27[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `articles`[0m
+  ↳ app/views/articles/index.html.erb:42
+  Rendered articles/index.html.erb within layouts/application (29.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/layouts/application.html.erb:20
+Completed 200 OK in 63ms (Views: 46.8ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/articles/28" for ::1 at 2019-04-24 13:23:51 +0900
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"28"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 28 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:11
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/articles/show.html.erb:13
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT `comments`.* FROM `comments` WHERE `comments`.`article_id` = 28[0m
+  ↳ app/views/articles/show.html.erb:31
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2[0m
+  ↳ app/views/articles/show.html.erb:31
+  Rendered articles/show.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 39ms (Views: 34.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2019-04-24 13:23:54 +0900
+Processing by ArticlesController#index as HTML
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT  AVG(`comments`.`rate`) AS average_rate, `comments`.`article_id` AS comments_article_id FROM `comments` GROUP BY `comments`.`article_id` ORDER BY average_rate DESC LIMIT 10[0m
+  ↳ app/controllers/articles_controller.rb:7
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 41 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 29 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 28 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 42 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 44 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 43 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 38 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 30 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 45 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 35 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.8ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` ORDER BY created_at DESC LIMIT 20 OFFSET 0[0m
+  ↳ app/views/articles/index.html.erb:10
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 46[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 45[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 44[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 43[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 42[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 41[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 40[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 39[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 38[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 37[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 36[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 35[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 34[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 33[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 32[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 31[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 30[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 29[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 28[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 27[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `articles`[0m
+  ↳ app/views/articles/index.html.erb:42
+  Rendered articles/index.html.erb within layouts/application (31.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/layouts/application.html.erb:20
+Completed 200 OK in 68ms (Views: 50.1ms | ActiveRecord: 8.7ms)
+
+
+Started GET "/" for ::1 at 2019-04-24 13:24:24 +0900
+Processing by ArticlesController#index as HTML
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT  AVG(`comments`.`rate`) AS average_rate, `comments`.`article_id` AS comments_article_id FROM `comments` GROUP BY `comments`.`article_id` ORDER BY average_rate DESC LIMIT 10[0m
+  ↳ app/controllers/articles_controller.rb:7
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 41 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 29 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 28 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 42 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 44 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 43 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 38 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 30 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 45 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 35 LIMIT 1[0m
+  ↳ app/controllers/articles_controller.rb:8
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT  `articles`.* FROM `articles` ORDER BY created_at DESC LIMIT 20 OFFSET 0[0m
+  ↳ app/views/articles/index.html.erb:10
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 46[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 45[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 44[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 43[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 42[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 41[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 40[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 39[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 38[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 37[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 36[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 35[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 34[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 33[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 32[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 31[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 30[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 29[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 28[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG(`comments`.`rate`) FROM `comments` WHERE `comments`.`article_id` = 27[0m
+  ↳ app/views/articles/index.html.erb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `articles`[0m
+  ↳ app/views/articles/index.html.erb:42
+  Rendered articles/index.html.erb within layouts/application (30.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/layouts/application.html.erb:20
+Completed 200 OK in 65ms (Views: 48.7ms | ActiveRecord: 8.2ms)
+
+
