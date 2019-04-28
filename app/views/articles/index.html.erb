@@ -10,7 +10,7 @@
         <%- @articles.each do |article| %>
           <li>
             <span class="smoky">
-            <%= link_to article.title, article_path(article.id) ,class:"buruburu" %>
+            <%= link_to article.title, article_path(article.id) ,class:"buruburu title" %>
             </span>
             <div class="clearfix">
             </div>
@@ -19,6 +19,7 @@
             <i class="fa fa-ghost buruburu"></i>
             <% num -= 1 %>
             <% end %>
+            <%= link_to article.user.nickname, usershow_article_path(article.user.id), class: "name buruburu" %>
           </li>
         <% end %>
       </ul>
@@ -34,6 +35,25 @@
             <p class="title buruburu">
               <span class="smoky">
               <%= link_to article.title, article_path(article.id) %>
+              </span>
+              <% num += 1 %>
+            </p>
+          </li>
+          <% end %>
+        </ul>
+      </nav>
+    </div>
+    <div class="wrapper-article__side">
+      <h4>投稿数ランキング</h4>
+      <nav>
+        <ul>
+          <% num = 1 %>
+          <% @rankingu.each do |user| %>
+          <li>
+            <p class="num"><%= num %></p>
+            <p class="title buruburu">
+              <span class="smoky">
+              <%= link_to user.nickname, usershow_article_path(user.id)  %>
               </span>
               <% num += 1 %>
             </p>

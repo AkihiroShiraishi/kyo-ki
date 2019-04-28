@@ -10,22 +10,13 @@
     background-color:white;
     .top{
       width:800px;
-      height: 300px;
+      height: 150px;
       background-color:#5f9ea0;
-      position: relative;
-      img{
-        width:200px;
-        border-radius:200%;
-        position: absolute;
-        top:30px;
-        left:300px;
-      }
       h3{
         font-size:30px;
         color:white;
-        position:absolute;
-        left:350px;
-        top:250px;
+        text-align: center;
+        line-height: 150px;
       }
     }
     .bottom{

@@ -2,6 +2,7 @@
   <div class="wrapper-show__article">
     <div class="title">
       <%= @article.title %>
+      <%= link_to @article.user.nickname, usershow_article_path(@article.user.id), class: "name"%>
     </div>
     <div class="text">
       <p id="weirdtext">

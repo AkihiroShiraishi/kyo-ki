@@ -6,6 +6,8 @@ before_action :move_to_index, except: [:index, :show]
     @articles = Article.order("created_at DESC").page(params[:page]).per(20)
     article_ids = Comment.group(:article_id).order('average_rate DESC').limit(10).average(:rate).keys
     @ranking = article_ids.map{ |id| Article.find(id)}
+    user_ids = Article.group(:user_id).order('count_id DESC').limit(10).count(:id).keys
+    @rankingu = user_ids.map{ |id| User.find(id)}
   end
   def show
     @article = Article.find(params[:id])
@@ -42,6 +44,11 @@ before_action :move_to_index, except: [:index, :show]
     else
       redirect_to root_path
     end
+  end
+
+  def usershow
+    @user = User.find(params[:id])
+    @articles = Article.where(user_id: params[:id])
   end
 
   def edit
