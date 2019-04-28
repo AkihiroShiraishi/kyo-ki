@@ -34,8 +34,10 @@ before_action :move_to_index, except: [:index, :show]
 
   def destroy
     article = Article.find(params[:id])
+    comments = article.comments
     if article.user_id == current_user.id
       article.destroy
+      comments.destroy_all
       redirect_to users_path(current_user)
     else
       redirect_to root_path

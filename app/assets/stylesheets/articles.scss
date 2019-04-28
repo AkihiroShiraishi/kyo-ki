@@ -37,17 +37,19 @@
         background-color:#e14024;
          }
           a{
+
             font-size:22px;
             line-height: 1.5;
             text-decoration: none;
             color:black;
-            display: block;
+            display: inline-block;
             &:hover{
               color:white;
               font-size:22px;
             }
           }
           i{
+            display: inline-block;
             color:#483d8b;
             margin-right:5px;
           }
@@ -116,6 +118,72 @@
   content:"";
   clear:both;
   display: block;
+}
+
+
+
+
+
+
+
+
+.smoky:hover{
+  display: inline-block;
+  text-shadow: 0 0 0 whitesmoke;
+  animation: smoky 3s 3s both infinite;
+}
+
+span:nth-child(even){
+  animation-name: smoky-mirror;
+}
+
+@keyframes smoky {
+  60% {
+    text-shadow: 0 0 40px whitesmoke;
+  }
+  to {
+    transform:
+      translate3d(15rem,-8rem,0)
+      rotate(-40deg)
+      skewX(70deg)
+      scale(1.5);
+    text-shadow: 0 0 20px whitesmoke;
+    opacity: 0;
+  }
+}
+
+@keyframes smoky-mirror {
+  60% {
+    text-shadow: 0 0 40px whitesmoke; }
+  to {
+    transform:
+      translate3d(18rem,-8rem,0)
+      rotate(-40deg)
+      skewX(-70deg)
+      scale(2);
+     text-shadow: 0 0 20px whitesmoke;
+    opacity: 0;
+  }
+}
+
+@for $item from 1 through 21 {
+  span:nth-of-type(#{$item}){
+    animation-delay: #{(3 + ($item/10))}s;
+  }
+}
+
+//ブルブル
+.buruburu:hover {
+    display: inline-block;
+    animation: hurueru .1s  infinite;
+}
+
+@keyframes hurueru {
+    0% {transform: translate(0px, 0px) rotateZ(0deg)}
+    25% {transform: translate(2px, 2px) rotateZ(1deg)}
+    50% {transform: translate(0px, 2px) rotateZ(0deg)}
+    75% {transform: translate(2px, 0px) rotateZ(-1deg)}
+    100% {transform: translate(0px, 0px) rotateZ(0deg)}
 }
 // Place all the styles related to the articles controller here.
 // They will automatically be included in application.css.

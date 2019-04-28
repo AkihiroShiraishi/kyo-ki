@@ -9,10 +9,14 @@
       <ul>
         <%- @articles.each do |article| %>
           <li>
-            <%= link_to article.title, article_path(article.id) %>
+            <span class="smoky">
+            <%= link_to article.title, article_path(article.id) ,class:"buruburu" %>
+            </span>
+            <div class="clearfix">
+            </div>
             <% num = article.comments.average(:rate).to_i %>
             <% num.times do %>
-            <i class="fa fa-ghost"></i>
+            <i class="fa fa-ghost buruburu"></i>
             <% num -= 1 %>
             <% end %>
           </li>
@@ -27,8 +31,10 @@
           <% @ranking.each do |article| %>
           <li>
             <p class="num"><%= num %></p>
-            <p class="title">
+            <p class="title buruburu">
+              <span class="smoky">
               <%= link_to article.title, article_path(article.id) %>
+              </span>
               <% num += 1 %>
             </p>
           </li>
