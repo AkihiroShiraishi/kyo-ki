@@ -24,6 +24,7 @@
     &__list{
       float:left;
       width:500px;
+      min-height: 1000px;
       background-color:#939393;
       margin: 20px 0 0 20px;
       ul{
@@ -103,9 +104,8 @@
       }
     }
     .pagination{
-      width:400px;
       padding-top:30px;
-      margin:0 auto;
+      margin-left:30px;
       font-size:25px;
       span{
         background-color: black;
