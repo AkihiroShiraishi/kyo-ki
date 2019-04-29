@@ -22,7 +22,7 @@ before_action :move_to_index, except: [:index, :show]
   end
 
   def search
-    @articles = Article.where('title LIKE(?)', "%#{params[:keyword]}%").limit(20)
+    @articles = Article.where('title LIKE(?)', "%#{params[:keyword]}%").order("created_at DESC").page(params[:page]).per(20)
   end
 
   def create

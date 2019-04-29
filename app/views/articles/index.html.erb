@@ -5,6 +5,14 @@
   </div>
   <div class="wrapper-article">
     <h3>新着記事</h3>
+    <%= form_tag(search_articles_path, method: :get) do %>
+    <div class="search-box">
+    <input name="keyword" placeholder="キーワードから探す" type = "text" value ="" class="search">
+    <button  type="submit">
+      <i class="fa fa-search"></i>
+    </button>
+    </div>
+    <% end %>
     <div class="wrapper-article__list">
       <ul>
         <%- @articles.each do |article| %>

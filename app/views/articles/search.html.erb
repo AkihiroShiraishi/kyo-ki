@@ -1,0 +1,29 @@
+<div class="search-wrapper">
+  <div class="wrapper-mypage__contain">
+    <div class="top">
+      <h3>
+        検索結果
+      </h3>
+    </div>
+    <div class="bottom">
+      <ul>
+        <%- @articles.each do |article| %>
+          <li>
+            <span class="smoky">
+            <%= link_to article.title, article_path(article.id) ,class:"buruburu title" %>
+            </span>
+            <div class="clearfix">
+            </div>
+            <% num = article.comments.average(:rate).to_i %>
+            <% num.times do %>
+            <i class="fa fa-ghost buruburu"></i>
+            <% num -= 1 %>
+            <% end %>
+            <%= link_to article.user.nickname, usershow_article_path(article.user.id), class: "name buruburu" %>
+          </li>
+        <% end %>
+      </ul>
+       <%= paginate(@articles) %>
+    </div>
+  </div>
+</div>

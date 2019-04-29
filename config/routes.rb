@@ -5,9 +5,10 @@ Rails.application.routes.draw do
   root "articles#index"
   resources :articles do
     get :usershow, on: :member
+    get :search, on: :collection
     resources :comments, only: [:create]
   end
   resources :users, only: [:index]
-  get '/articles/search', to:'articles#search'
+  # get '/articles/search', to:'articles#search'
 
 end
