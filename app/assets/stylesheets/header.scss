@@ -1,3 +1,4 @@
+@media screen and(min-width: 768px){
 header{
   background-color:#333333;
   width:100%;
@@ -14,6 +15,9 @@ header{
       text-decoration: none;
       margin-left:20px;
     }
+    i{
+      display: none;
+    }
     a{
       font-size:20px;
       float:right;
@@ -27,4 +31,73 @@ header{
     }
   }
 }
-
+}
+@media screen and (max-width: 460px){
+  header{
+  background-color:#333333;
+  width:100%;
+  height: 80px;
+  color:white;
+  .header-wrapper{
+  height: 80px;
+  margin:0 auto;
+  padding-top:25px;
+    .logo{
+      font-size:30px;
+      float:left;
+      color:white;
+      text-decoration: none;
+      margin-left:20px;
+      position:absolute;
+      z-index:20;
+    }
+    a{
+      font-size:20px;
+      float:right;
+      color:white;
+      margin-right:20px;
+      text-decoration: none;
+      font-family:'Sawarabi Mincho', sans-serif;
+      &:hover{
+        color:red;
+      }
+    }
+  }
+}
+#menu{
+    display: none;
+  }
+  #menu li{
+    width: 100%;
+  }
+  #toggle{
+  display: block;
+  position: relative;
+  width: 100%;
+  background: #eee;
+  i{
+    font-size:30px;
+    position: absolute;
+    right:30px;
+  }
+  ul{
+    position: absolute;
+    top:50px;
+    right: 0;
+    z-index:30;
+    background-color: #333333;
+    li{
+      padding-left:5px;
+    }
+  }
+}
+#toggle a{
+  display: block;
+  position: relative;
+  padding: 12px 0 10px;
+  border-bottom: 1px solid #444;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}
+}
