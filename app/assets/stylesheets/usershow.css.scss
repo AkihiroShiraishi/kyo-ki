@@ -1,0 +1,218 @@
+@media screen and(min-width: 1024px){
+.wrapper-userpage{
+  width:100%;
+  height: 100%;
+  background-color:#2b2b2b;
+  padding:100px 0;
+  font-family: 'Sawarabi Mincho', sans-serif;
+  .wrapper-mypage__contain{
+    width:800px;
+    margin:0 auto;
+    background-color:white;
+    .top{
+      width:800px;
+      height: 150px;
+      background-color:#696969;
+      position: relative;
+      h3{
+        font-size:30px;
+        color:red;
+        text-align: center;
+        line-height: 150px;
+      }
+    }
+    .bottom{
+      min-height: 500px;
+      padding:30px 0;
+      background-color: #d3d3d3;
+     ul{
+        li{
+          width:480px;
+          height:50px;
+          margin:0 auto;
+          border-bottom:2px solid black;
+          background-color:#939393;
+          position: relative;
+          padding:0 10px;
+          &:hover{
+        background-color:#e14024;
+         }
+          .title{
+            font-size:22px;
+            line-height: 1.5;
+            text-decoration: none;
+            color:black;
+            display: inline-block;
+            &:hover{
+              color:white;
+              font-size:22px;
+            }
+          }
+          i{
+            display: inline-block;
+            color:#483d8b;
+            margin-right:5px;
+          }
+          .name{
+            font-size:15px;
+            height: 15px;
+            color:black;
+            text-decoration: none;
+            position: absolute;
+            right:30px;
+            &:hover{
+              color:white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+}
+@media screen and(max-width: 1024px){
+  .wrapper-userpage{
+  width:100%;
+  height: 100%;
+  background-color:#2b2b2b;
+  padding:100px 0 400px 0;
+  font-family: 'Sawarabi Mincho', sans-serif;
+  .wrapper-mypage__contain{
+    width:100%;
+    margin:0 auto;
+    background-color:white;
+    .top{
+      width:100%;
+      height: 150px;
+      background-color:#696969;
+      position: relative;
+      h3{
+        font-size:30px;
+        color:red;
+        text-align: center;
+        line-height: 150px;
+      }
+    }
+    .bottom{
+      min-height: 500px;
+      padding:30px 0;
+      background-color: #d3d3d3;
+     ul{
+        li{
+          width:480px;
+          height:50px;
+          margin:0 auto;
+          border-bottom:2px solid black;
+          background-color:#939393;
+          position: relative;
+          padding:0 10px;
+          &:hover{
+        background-color:#e14024;
+         }
+          .title{
+            font-size:22px;
+            line-height: 1.5;
+            text-decoration: none;
+            color:black;
+            display: inline-block;
+            &:hover{
+              color:white;
+              font-size:22px;
+            }
+          }
+          i{
+            display: inline-block;
+            color:#483d8b;
+            margin-right:5px;
+          }
+          .name{
+            font-size:15px;
+            height: 15px;
+            color:black;
+            text-decoration: none;
+            position: absolute;
+            right:30px;
+            &:hover{
+              color:white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+}
+@media screen and(max-width: 460px){
+  .wrapper-userpage{
+  width:100%;
+  height: 100%;
+  background-color:#2b2b2b;
+  padding:0;
+  font-family: 'Sawarabi Mincho', sans-serif;
+  .wrapper-mypage__contain{
+    width:100%;
+    margin:0 auto;
+    background-color:white;
+    .top{
+      width:100%;
+      height: 150px;
+      background-color:#696969;
+      position: relative;
+      h3{
+        font-size:30px;
+        color:red;
+        text-align: center;
+        line-height: 150px;
+      }
+    }
+    .bottom{
+      min-height: 500px;
+      padding:0;
+      background-color: #d3d3d3;
+     ul{
+        li{
+          width:100%;
+          height:50px;
+          margin:0 auto;
+          border-bottom:2px solid black;
+          background-color:#939393;
+          position: relative;
+          padding:0;
+          &:hover{
+        background-color:#e14024;
+         }
+          .title{
+            font-size:22px;
+            margin-left:10px;
+            line-height: 1.5;
+            text-decoration: none;
+            color:black;
+            display: inline-block;
+            &:hover{
+              color:white;
+              font-size:22px;
+            }
+          }
+          i{
+            display: inline-block;
+            margin-left:10px;
+            color:#483d8b;
+            margin-right:5px;
+          }
+          .name{
+            font-size:15px;
+            height: 15px;
+            color:black;
+            text-decoration: none;
+            position: absolute;
+            right:30px;
+            &:hover{
+              color:white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+}
